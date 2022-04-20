@@ -1,0 +1,101 @@
+/* **************
+**** CSS by Jennie *****
+**** YOU HAVE BEEN WARNED *******
+**** TURN BACK NOW ******
+***** REALLY!!!! *****
+**** The road ahead is dark ***/
+
+/* TODO: add box model, reset, media queries */
+/* TODO: add skins to toggle */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Space Mono', monospace;
+}
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculatorShape {
+    height: 560px;
+    width: 340px;
+    background-color: #3EECAC;
+    background-image: linear-gradient(19deg, #2eab9f 0%, #e59f53 100%);
+    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2rem;
+    padding: 3%;
+}
+.superTop {
+    height: 100px;
+    width: 320px;
+    transform: skew(-5deg,5deg);
+    background-color: #3EECAC;
+    background-image: linear-gradient(19deg, #2eab9f 0%, #e59f53 100%);
+}
+.top::before,
+.top::after {
+    width: 10%;
+    border-left: 0;
+    border-right: 0;
+}
+.top {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid #2eab9f;
+}
+.top .viewWindow {
+    padding: 5%;
+    height: 60px;
+    width: 260px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    font-family: 'Digital-7','Space Mono',monospace;
+    background: rgb(124,140,115);
+}
+.branding {
+    color: rgb(207, 205, 205);
+    font-size: 2.4rem;
+    text-align: right;
+    padding-right: 5%;
+    font-weight: 700;
+}
+.specials .button {
+    font-size: 2rem;
+}
+.buttons {
+    padding: 2%;
+    height: 340px;
+    display: flex;
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.button {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: rgb(124,110,110);
+    box-shadow: 2px 2px #e59f53;
+    color: rgb(207, 205, 205);
+    font-size: 3.6rem;
+    border-radius: 30px;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
